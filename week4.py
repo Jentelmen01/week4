@@ -80,9 +80,10 @@ def generate_sales_report(employee, product_category, units, price_tier, experie
     commission = calculate_commission_earned(revenue, units, level_name)
     training_needed = needs_training_support(consecutive_months, units, performance)
 
+    print("RETAIL SALES PERFORMANCE SYSTEM")
     print("=" * 50)
     print(f"Sales Performance Report for {employee}")
-    print("=" * 50)
+    print("-" * 50)
     print(f"Product Category     : {product_category.capitalize()}")
     print(f"Units Sold            : {units}")
     print(f"Price Tier            : {price_tier.capitalize()}")
@@ -97,3 +98,4 @@ def generate_sales_report(employee, product_category, units, price_tier, experie
     print("=" * 50)
     print()
 
+generate_sales_report( 'Blake', 'electronics', 45 , 'high', 3, 800, 1150, 3)
